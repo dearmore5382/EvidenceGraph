@@ -1,0 +1,733 @@
+{
+  "contract": "0xff14db8477421e0FBC3c9865b4a0350Bc0c7C063",
+  "source_sha256": "398f8f6ff2b4fc2679eb84964e1f20f65650a58a2f5e38e7d3b772ba4526ae1f",
+  "fixture_repository": "dearmore5382/NoticeClause-Gate",
+  "fixture_commit": "21d3f20353583b1ff50129de2f6fee037a66b550",
+  "started_at": "2026-09-19T01:10:05.139670+00:00",
+  "wallets": [
+    "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+    "0xA63DE24e30C88FB1019E8956654730316e36eDBE"
+  ],
+  "steps": [
+    {
+      "id": "H1-create",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "create_case",
+      "args": [
+        "Notice clause content verification",
+        "The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.",
+        "SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim."
+      ],
+      "allowed": [
+        "0"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xafd5939844a9dde16a2855daa39fd55d2edc9b7263607e8aaa0ad7651d9d0730",
+      "actual": "0",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"\", \"challenger\": \"\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [], \"id\": 0, \"observation\": \"\", \"status\": \"DRAFT\", \"title\": \"Notice clause content verification\", \"verdict\": \"UNEVALUATED\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xafd5939844a9dde16a2855daa39fd55d2edc9b7263607e8aaa0ad7651d9d0730"
+    },
+    {
+      "id": "H2-support-a",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        0,
+        "SUPPORT",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "fixtures/compliant.txt",
+        "af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xc23834a527238352a9d42813b32a1b2201f6dd2e53561a240d1b3cdd768ae372",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"\", \"challenger\": \"\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}], \"id\": 0, \"observation\": \"\", \"status\": \"DRAFT\", \"title\": \"Notice clause content verification\", \"verdict\": \"UNEVALUATED\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xc23834a527238352a9d42813b32a1b2201f6dd2e53561a240d1b3cdd768ae372"
+    },
+    {
+      "id": "H3-support-b",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        0,
+        "SUPPORT",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "verification/LIVE_RESULTS.md",
+        "daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xa3b26f1226c1220cdbec755ba096adc108c6f5eef642a0c3b0efca9d9e67fe97",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"\", \"challenger\": \"\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}], \"id\": 0, \"observation\": \"\", \"status\": \"DRAFT\", \"title\": \"Notice clause content verification\", \"verdict\": \"UNEVALUATED\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xa3b26f1226c1220cdbec755ba096adc108c6f5eef642a0c3b0efca9d9e67fe97"
+    },
+    {
+      "id": "H4-seal",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "seal_case",
+      "args": [
+        0
+      ],
+      "allowed": [
+        "CASE_SEALED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xda86466977b45a8c62c7ab0ed1b128f5cff7d0061e42d969ca33304508395b01",
+      "actual": "CASE_SEALED",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"\", \"challenger\": \"\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}], \"id\": 0, \"observation\": \"\", \"status\": \"SEALED\", \"title\": \"Notice clause content verification\", \"verdict\": \"UNEVALUATED\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xda86466977b45a8c62c7ab0ed1b128f5cff7d0061e42d969ca33304508395b01"
+    },
+    {
+      "id": "H5-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_case",
+      "args": [
+        0
+      ],
+      "allowed": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xdf971f6e49a19dd3f3821e7d4540acd1b9aaf53015f6b6d16da7628ec96612d3",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"\", \"challenger\": \"\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"ASSESSED\", \"title\": \"Notice clause content verification\", \"verdict\": \"INSUFFICIENT_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xdf971f6e49a19dd3f3821e7d4540acd1b9aaf53015f6b6d16da7628ec96612d3"
+    },
+    {
+      "id": "H6-challenge",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "open_challenge",
+      "args": [
+        0,
+        "A source using Agreement OTHER-01 contradicts the sealed exact-reference claim."
+      ],
+      "allowed": [
+        "CHALLENGE_OPENED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x937c0a222d7765a0cbe39d5810f711ed50dfe3251fe9e0d29d99a4cab04bc70b",
+      "actual": "CHALLENGE_OPENED",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"CHALLENGED\", \"title\": \"Notice clause content verification\", \"verdict\": \"INSUFFICIENT_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x937c0a222d7765a0cbe39d5810f711ed50dfe3251fe9e0d29d99a4cab04bc70b"
+    },
+    {
+      "id": "H7-counter",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "add_evidence",
+      "args": [
+        0,
+        "COUNTER",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "fixtures/wrong-reference.txt",
+        "1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x4d8cffef8c7b7079b5a034763c1e9f1599bb93e02eec4d2f14bf208412a0fe68",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"CHALLENGED\", \"title\": \"Notice clause content verification\", \"verdict\": \"INSUFFICIENT_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x4d8cffef8c7b7079b5a034763c1e9f1599bb93e02eec4d2f14bf208412a0fe68"
+    },
+    {
+      "id": "H8-resolve",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "assess_case",
+      "args": [
+        0
+      ],
+      "allowed": [
+        "MIXED_EVIDENCE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xc51868fa17a86496e337d08338bd39091f30d8bc3a47ceacbd401076d3cb5f0b",
+      "actual": "MIXED_EVIDENCE",
+      "readback": {
+        "count": 1,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xc51868fa17a86496e337d08338bd39091f30d8bc3a47ceacbd401076d3cb5f0b"
+    },
+    {
+      "id": "P1-create-happy",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "create_case",
+      "args": [
+        "Agenda scope happy path",
+        "Repairing broken onboarding documentation links is permitted by the community website maintenance agenda.",
+        "SUPPORTS requires explicit permission for documentation-link repair."
+      ],
+      "allowed": [
+        "1"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x591bfd710d7980fe0cdaf73fe012b8694c02263d00d7fcd90cc5885327d8f6cd",
+      "actual": "1",
+      "readback": {
+        "count": 2,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x591bfd710d7980fe0cdaf73fe012b8694c02263d00d7fcd90cc5885327d8f6cd"
+    },
+    {
+      "id": "P2-happy-agenda",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        1,
+        "SUPPORT",
+        "dearmore5382",
+        "AgendaScopeGate",
+        "03b9e05b89fa4bb17ad02248a8172495cf75b25c",
+        "fixtures/agenda.txt",
+        "7b5c1b4785eb8fc02f30eccde4060cb7909989c885a039c5dbed73e017239210"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x05592920b8f3d5812df7dfc4c979537e70377032abb9ea1bb20f5536333e2dad",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 2,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x05592920b8f3d5812df7dfc4c979537e70377032abb9ea1bb20f5536333e2dad"
+    },
+    {
+      "id": "P3-happy-motion",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        1,
+        "SUPPORT",
+        "dearmore5382",
+        "AgendaScopeGate",
+        "03b9e05b89fa4bb17ad02248a8172495cf75b25c",
+        "fixtures/in-scope.txt",
+        "59caf88920f73b84de861139fce82d507aed998990705eb484b419e1f567609a"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x28172227335541d6010e834bbcff7ed13eba460302c27ce3402629cfe2298fb4",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 2,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x28172227335541d6010e834bbcff7ed13eba460302c27ce3402629cfe2298fb4"
+    },
+    {
+      "id": "P4-happy-seal",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "seal_case",
+      "args": [
+        1
+      ],
+      "allowed": [
+        "CASE_SEALED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x3224c895c5f17d39385d95bd3d36763fe6e46d5742f1ac1af32b4f92b15c1dfc",
+      "actual": "CASE_SEALED",
+      "readback": {
+        "count": 2,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x3224c895c5f17d39385d95bd3d36763fe6e46d5742f1ac1af32b4f92b15c1dfc"
+    },
+    {
+      "id": "P5-happy-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_case",
+      "args": [
+        1
+      ],
+      "allowed": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x2089c8293515187413889fecd6750e733f2b55a7b66d99f0ab84070a0335045f",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "readback": {
+        "count": 2,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x2089c8293515187413889fecd6750e733f2b55a7b66d99f0ab84070a0335045f"
+    },
+    {
+      "id": "P6-create-independent-happy",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "create_case",
+      "args": [
+        "AgendaScopeGate live verification",
+        "The AgendaScopeGate StudioNet lifecycle completed with source parity and an in-scope documentation-link repair result.",
+        "SUPPORTS requires the report to state completed live verification and the documentation-link repair outcome."
+      ],
+      "allowed": [
+        "2"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x813a2e498acf33e9be018fc4395800ed363fe59454ff6461c7ad9b68a953cf7a",
+      "actual": "2",
+      "readback": {
+        "count": 3,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x813a2e498acf33e9be018fc4395800ed363fe59454ff6461c7ad9b68a953cf7a"
+    },
+    {
+      "id": "P7-happy-report-a",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        2,
+        "SUPPORT",
+        "dearmore5382",
+        "AgendaScopeGate",
+        "03b9e05b89fa4bb17ad02248a8172495cf75b25c",
+        "verification/studionet-e2e-current.md",
+        "6cb1537a751c26ed1759bcc5bbf66fce5fc506316ea3867236a4de7c22b13fd5"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x138007036be4d924830189abe1f3b3df9a6ad0d84fd8162a9d90fc320c2efd47",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 3,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x138007036be4d924830189abe1f3b3df9a6ad0d84fd8162a9d90fc320c2efd47"
+    },
+    {
+      "id": "P8-happy-report-b",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        2,
+        "SUPPORT",
+        "dearmore5382",
+        "AgendaScopeGate",
+        "03b9e05b89fa4bb17ad02248a8172495cf75b25c",
+        "verification/release-evidence.md",
+        "507722c996a79655ca3ac5a22d04c103e1e5fe3c144a2ba2ccd5f7f1b8a9ada3"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x38aa037ff02f1d39b2d63c01f9130c2fdc4eab34b7c27534f08568df9a0408fe",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 3,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x38aa037ff02f1d39b2d63c01f9130c2fdc4eab34b7c27534f08568df9a0408fe"
+    },
+    {
+      "id": "P9-independent-happy-seal",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "seal_case",
+      "args": [
+        2
+      ],
+      "allowed": [
+        "CASE_SEALED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x71a435f17bebd54e25f48abab82919de6f5735a7b459c0c29dde937b0b35a179",
+      "actual": "CASE_SEALED",
+      "readback": {
+        "count": 3,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x71a435f17bebd54e25f48abab82919de6f5735a7b459c0c29dde937b0b35a179"
+    },
+    {
+      "id": "P10-independent-happy-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_case",
+      "args": [
+        2
+      ],
+      "allowed": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x6b3aab4d67c7682636461a72445806058fe160079f3fb5519b7951117ac7e89f",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "readback": {
+        "count": 3,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x6b3aab4d67c7682636461a72445806058fe160079f3fb5519b7951117ac7e89f"
+    },
+    {
+      "id": "F1-create-contradiction",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "create_case",
+      "args": [
+        "Agenda exclusions",
+        "Minting governance tokens and transferring treasury funds are permitted website-maintenance actions.",
+        "CONTRADICTS when either claimed financial action is explicitly excluded or unauthorized."
+      ],
+      "allowed": [
+        "3"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xe7aa5a35abde7c4dcaaa4d75249d676ecc6e2426d526398f5bc05e73c51aa5e9",
+      "actual": "3",
+      "readback": {
+        "count": 4,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xe7aa5a35abde7c4dcaaa4d75249d676ecc6e2426d526398f5bc05e73c51aa5e9"
+    },
+    {
+      "id": "F2-exclusion",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        3,
+        "SUPPORT",
+        "dearmore5382",
+        "AgendaScopeGate",
+        "03b9e05b89fa4bb17ad02248a8172495cf75b25c",
+        "fixtures/explicit-exclusion.txt",
+        "4fde473896728b4e83e2e2d46d19bf86eaef760769e3dfbef7b7191a97804650"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xd3e122d67cdc7bac9cbfe82c7ee709da6eb66a02febc0458c9dc557ea757635f",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 4,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xd3e122d67cdc7bac9cbfe82c7ee709da6eb66a02febc0458c9dc557ea757635f"
+    },
+    {
+      "id": "F3-injection-motion",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        3,
+        "CONTEXT",
+        "dearmore5382",
+        "AgendaScopeGate",
+        "03b9e05b89fa4bb17ad02248a8172495cf75b25c",
+        "fixtures/prompt-injection.txt",
+        "727e1be7632c86d531774b614aca72f9c1dbb019754524d9a8ab7ad68d1153a1"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x8777fd723923b1fe3af7c880d3b7e5160ac478a0d96f6d6f885799ee5481a563",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 4,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x8777fd723923b1fe3af7c880d3b7e5160ac478a0d96f6d6f885799ee5481a563"
+    },
+    {
+      "id": "F4-contradiction-seal",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "seal_case",
+      "args": [
+        3
+      ],
+      "allowed": [
+        "CASE_SEALED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x36f44e53d2ec8b6500de35d8aa881a43a136034a36598cdb47fd07f78aa2ee53",
+      "actual": "CASE_SEALED",
+      "readback": {
+        "count": 4,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x36f44e53d2ec8b6500de35d8aa881a43a136034a36598cdb47fd07f78aa2ee53"
+    },
+    {
+      "id": "F5-contradiction-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_case",
+      "args": [
+        3
+      ],
+      "allowed": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xb88dce105444d9af0fdffa82f211821ec83a88c90d3bfa36fc6bedfe8934a020",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "readback": {
+        "count": 4,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xb88dce105444d9af0fdffa82f211821ec83a88c90d3bfa36fc6bedfe8934a020"
+    },
+    {
+      "id": "I1-create-integrity",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "create_case",
+      "args": [
+        "Integrity failure",
+        "The notice has a clear reason and effective date.",
+        "Assess only after both source digests match."
+      ],
+      "allowed": [
+        "4"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x0eb69a4b3088899179fba6d4670e54213df0551dc5353c161986fcc91a4b76c1",
+      "actual": "4",
+      "readback": {
+        "count": 5,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x0eb69a4b3088899179fba6d4670e54213df0551dc5353c161986fcc91a4b76c1"
+    },
+    {
+      "id": "I2-false-digest",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        4,
+        "SUPPORT",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "fixtures/missing-reason.txt",
+        "0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xff3b45a3c032999589a97da1c4416cba1d880a301406be7ed7de8103d751c2e2",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 5,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xff3b45a3c032999589a97da1c4416cba1d880a301406be7ed7de8103d751c2e2"
+    },
+    {
+      "id": "I3-second-source",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        4,
+        "CONTEXT",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "fixtures/unclear-date.txt",
+        "57b7801fadde19c63627a9aa87bc5922b74f96b4b52b217598413c34c642f484"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x0a868186baa9194debab89afe95b2814df786f52976a647a446bb4551bd561c7",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 5,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x0a868186baa9194debab89afe95b2814df786f52976a647a446bb4551bd561c7"
+    },
+    {
+      "id": "I4-integrity-seal",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "seal_case",
+      "args": [
+        4
+      ],
+      "allowed": [
+        "CASE_SEALED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x97fa6d90773bc66cef212e1db4138f821bfa7efbbe1c65802f3c9d3d5667023a",
+      "actual": "CASE_SEALED",
+      "readback": {
+        "count": 5,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x97fa6d90773bc66cef212e1db4138f821bfa7efbbe1c65802f3c9d3d5667023a"
+    },
+    {
+      "id": "I5-integrity-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_case",
+      "args": [
+        4
+      ],
+      "allowed": [
+        "INTEGRITY_FAILURE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x92b60a2708809a485555912043899c6448ef2e4d374578b873e3ddbc1dd6aab6",
+      "actual": "INTEGRITY_FAILURE",
+      "readback": {
+        "count": 5,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x92b60a2708809a485555912043899c6448ef2e4d374578b873e3ddbc1dd6aab6"
+    },
+    {
+      "id": "U1-create-unavailable",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "create_case",
+      "args": [
+        "Unavailable retry",
+        "The notice is compliant.",
+        "Unavailable sources must not mutate the sealed case."
+      ],
+      "allowed": [
+        "5"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x081d111113848492c06c5f1112e024c13ba6dd141ae89ffa12ab92389cb24cbe",
+      "actual": "5",
+      "readback": {
+        "count": 6,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x081d111113848492c06c5f1112e024c13ba6dd141ae89ffa12ab92389cb24cbe"
+    },
+    {
+      "id": "U2-live-source",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        5,
+        "SUPPORT",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "fixtures/prompt-injection.txt",
+        "b5b4705689c4601706b9632d01052209e1967a7118267d5d7912ccd344dcc95c"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xe42d3c20cf26b6c3210d5fc97b1be4d35d4593cccf71be3bd79307a1d90ce8c9",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 6,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xe42d3c20cf26b6c3210d5fc97b1be4d35d4593cccf71be3bd79307a1d90ce8c9"
+    },
+    {
+      "id": "U3-dead-source",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "add_evidence",
+      "args": [
+        5,
+        "CONTEXT",
+        "dearmore5382",
+        "NoticeClause-Gate",
+        "21d3f20353583b1ff50129de2f6fee037a66b550",
+        "fixtures/does-not-exist.md",
+        "1111111111111111111111111111111111111111111111111111111111111111"
+      ],
+      "allowed": [
+        "EVIDENCE_ADDED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x2279c037e8ac400bb1dd36ef31ca61e5b63c334fa71635e0781ae09c5b67d11e",
+      "actual": "EVIDENCE_ADDED",
+      "readback": {
+        "count": 6,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x2279c037e8ac400bb1dd36ef31ca61e5b63c334fa71635e0781ae09c5b67d11e"
+    },
+    {
+      "id": "U4-unavailable-seal",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "seal_case",
+      "args": [
+        5
+      ],
+      "allowed": [
+        "CASE_SEALED"
+      ],
+      "status": "VERIFIED",
+      "hash": "0x2509ae47843b423440386a062427d28db7f337850416ba22494a1aa28736426a",
+      "actual": "CASE_SEALED",
+      "readback": {
+        "count": 6,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x2509ae47843b423440386a062427d28db7f337850416ba22494a1aa28736426a"
+    },
+    {
+      "id": "U5-unavailable-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_case",
+      "args": [
+        5
+      ],
+      "allowed": [
+        "ASSESSMENT_RETRYABLE"
+      ],
+      "status": "VERIFIED",
+      "hash": "0xfa64809f90cccbedef376a84dec93f2ad92212130977d8798065e80222102f01",
+      "actual": "ASSESSMENT_RETRYABLE",
+      "readback": {
+        "count": 6,
+        "case0": "{\"challenge_reason\": \"A source using Agreement OTHER-01 contradicts the sealed exact-reference claim.\", \"challenger\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"claim\": \"The notice states termination because monthly uptime fell below 95%, effective 2026-10-01, under Agreement SVC-2026-017.\", \"creator\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"criteria\": \"SUPPORTS requires all three exact facts: uptime below 95% as the reason, effective date 2026-10-01, and Agreement SVC-2026-017. A different agreement reference CONTRADICTS the claim.\", \"evidence\": [{\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/compliant.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"verification/LIVE_RESULTS.md\", \"repository\": \"NoticeClause-Gate\", \"role\": \"SUPPORT\", \"sha256\": \"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\"}, {\"commit\": \"21d3f20353583b1ff50129de2f6fee037a66b550\", \"owner\": \"dearmore5382\", \"path\": \"fixtures/wrong-reference.txt\", \"repository\": \"NoticeClause-Gate\", \"role\": \"COUNTER\", \"sha256\": \"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\"}], \"id\": 0, \"observation\": \"{\\\"digests\\\":[\\\"af1dc913caa85cd32622a3c742692fdc94552eb66b5e9b1160f8d8e1ba789266\\\",\\\"daa95baee3b3c9b539f991291178be7aef094ec26d8219c820783c5e1934e754\\\",\\\"1c49bc9969e287be60bcb2d717bc25a29ea3463c59eb38cfdd9ae5f7e34ac933\\\"],\\\"findings\\\":[\\\"SUPPORTS\\\",\\\"INSUFFICIENT\\\",\\\"CONTRADICTS\\\"],\\\"status\\\":\\\"VERIFIED\\\"}\", \"status\": \"RESOLVED\", \"title\": \"Notice clause content verification\", \"verdict\": \"MIXED_EVIDENCE\"}"
+      },
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xfa64809f90cccbedef376a84dec93f2ad92212130977d8798065e80222102f01"
+    }
+  ],
+  "complete": true,
+  "completed_at": "2026-09-19T02:03:00.644961+00:00"
+}
