@@ -22,6 +22,7 @@ The Direct Mode suite exercises authorization, lifecycle locking, global source 
 
 ## Live deployment
 
+- Public DApp: https://evidencegraph.dearmorescheuer5382.workers.dev
 - StudioNet contract: `0xff14db8477421e0FBC3c9865b4a0350Bc0c7C063`
 - Exact deployed source SHA-256: `398f8f6ff2b4fc2679eb84964e1f20f65650a58a2f5e38e7d3b772ba4526ae1f`
 - Two-wallet lifecycle: complete
