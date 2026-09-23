@@ -1,0 +1,1 @@
+{"bomFormat":"CycloneDX","components":[{"name":"chalk","type":"library","version":"5.4.1"},{"name":"commander","type":"library","version":"12.1.0"}],"specVersion":"1.6","version":1}
